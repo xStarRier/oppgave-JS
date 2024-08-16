@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #StephsTag1, #StephsTag2{
+            background-color: rgb(255, 242, 127);
+            width: 500px;
+            margin: 10px;
+        }
+        #StephsTag2{
+            background:aquamarine ;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>Introduksjon til JavaScript</h3>
+    <ol>
+        <li>Finne frem til en tagg</li>
+        <li>Endre HTML</li>
+        <li>Trekke ut som funksjon</li>
+        <li>Kalle andre funksjoner</li>
+    </ol>
+    <h3>Så bruker vi JavaScript til dette:</h3>
+
+</ol>
+<li>Åpne og lukke</li>
+<li>Velg hode</li>
+<ol>  
+<div>
+<div class="card"onclick="show1()">Title A</div>
+<div class="header"></div>
+<div id="StephsTag1"></div>
+</div>
+
+<div>
+    <div class="card"onclick="show2()">Title B</div>
+    <div class="header"></div>
+    <div id="StephsTag2"></div>
+    </div>
+    
+
+ <script>
+    function show1(){
+     blankAll();     
+    document.getElementById('StephsTag1').innerHTML=/*HTML*/`
+
+    <h3>Aaa<h3>   
+     Hei, hei, hei
+     `;
+}
+    function show2(){
+     blankAll();
+    document.getElementById('StephsTag2').innerHTML=/*HTML*/`
+
+    <h3>Aaa<h3>   
+    Hei, hei, hei
+    
+    `;
+}
+    function blankAll(){    
+    document.getElementById('StephsTag1').innerHTML= '';
+    document.getElementById('StephsTag2').innerHTML= '';
+}                                                                                                                                 
+</script>
+</body> 
+</html>
