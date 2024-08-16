@@ -6,10 +6,14 @@
     <title>Document</title>
     <style>
         #StephsTag1, #StephsTag2{
-            background-color: aquamarine;
+            background-color: rgb(255, 242, 127);
             width: 500px;
             margin: 10px;
         }
+        #StephsTag2{
+            background:aquamarine ;
+        }
+
     </style>
 </head>
 <body>
@@ -26,35 +30,41 @@
 <li>Åpne og lukke</li>
 <li>Velg hode</li>
 <ol>  
-    <div id="StephsTag1"></div>
-    <div id="StephsTag2"></div>
- <button onclick="show1()">Vis noe i tagg 1</button>
- <button onclick="show2()">Vis noe i tagg 2</button>
- <button onclick="blankall">Blank begge</button>
+<div>
+<div class="card"onclick="show1()">Title A</div>
+<div class="header"></div>
+<div id="StephsTag1"></div>
+</div>
 
+<div>
+    <div class="card"onclick="show2()">Title B</div>
+    <div class="header"></div>
+    <div id="StephsTag2"></div>
+    </div>
+    
 
  <script>
     function show1(){
+     blankAll();     
     document.getElementById('StephsTag1').innerHTML=/*HTML*/`
+
     <h3>Aaa<h3>   
      Hei, hei, hei
-                                                                       
-   `;
+     `;
 }
     function show2(){
+     blankAll();
     document.getElementById('StephsTag2').innerHTML=/*HTML*/`
 
     <h3>Aaa<h3>   
-    Hei, hei, hei                                                                 
-                                                                                                                                              
-        `;
-     }
+    Hei, hei, hei
     
-    function blankall(){    
-    document.getElementById('StephsTag1').innerHTML=
-    document.getElementById('StephsTag2').innerHTML=
- ``;}
-                                                                                                                                    
+    `;
+}
+    function blankAll(){    
+    document.getElementById('StephsTag1').innerHTML= '';
+    document.getElementById('StephsTag2').innerHTML= '';
+}                                                                                                                                 
 </script>
 </body> 
 </html>
